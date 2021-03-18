@@ -12,12 +12,12 @@ body {
 }
 
 a {
-  color: #4154f1;
+  color: #cf152d;
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: #cf152d;
   text-decoration: none;
 }
 
@@ -78,12 +78,13 @@ section {
 }
 
 .section-header h2 {
-  font-size: 13px;
+  font-size: 32px;
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: #24282b;
   text-transform: uppercase;
+  padding: 1.5em 0;
 }
 
 .section-header p {
@@ -611,13 +612,6 @@ section {
   text-transform: uppercase;
 }
 
-.about h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #24282b;
-  padding: 20px 0;
-}
-
 .about p {
   margin: 15px 0 30px 0;
   line-height: 24px;
@@ -759,14 +753,15 @@ section {
 
 .features .feature-box h3 {
   font-size: 18px;
-  color: #012970;
+  color: #24282b;
   font-weight: 700;
   margin: 0;
 }
 
 .features .feature-box i {
   line-height: 0;
-  background: #ecf3ff;
+  background: #fae7ea;
+  color: #24282b;
   padding: 4px;
   margin-right: 10px;
   font-size: 24px;
@@ -775,7 +770,7 @@ section {
 }
 
 .features .feature-box:hover i {
-  background: #4154f1;
+  background: #cf152d;
   color: #fff;
 }
 
@@ -1198,8 +1193,8 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #4154f1;
-  border-color: #4154f1;
+  color: #cf152d;
+  border-color: #cf152d;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1468,11 +1463,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #4154f1;
+  border: 1px solid #cf152d;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: #cf152d;
 }
 
 .testimonials .swiper-slide {
@@ -1599,6 +1594,7 @@ section {
 .clients .clients-slider .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
+  max-height: 100px;
 }
 
 .clients .clients-slider .swiper-slide img:hover {
@@ -1606,7 +1602,7 @@ section {
 }
 
 .clients .clients-slider .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -1615,11 +1611,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #4154f1;
+  border: 1px solid #cf152d;
 }
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: #cf152d;
 }
 
 /*--------------------------------------------------------------
@@ -1650,14 +1646,14 @@ section {
 .recent-blog-posts .post-box .post-date {
   font-size: 16px;
   font-weight: 600;
-  color: rgba(1, 41, 112, 0.6);
+  color: #919395;
   display: block;
   margin-bottom: 10px;
 }
 
 .recent-blog-posts .post-box .post-title {
   font-size: 24px;
-  color: #012970;
+  color: #24282b;
   font-weight: 700;
   margin-bottom: 18px;
   position: relative;
@@ -1679,7 +1675,7 @@ section {
 }
 
 .recent-blog-posts .post-box:hover .post-title {
-  color: #4154f1;
+  color: #cf152d;
 }
 
 .recent-blog-posts .post-box:hover .post-img img {
