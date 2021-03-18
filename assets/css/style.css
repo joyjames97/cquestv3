@@ -8,7 +8,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  color: #444444;
+  color: #24282b;
 }
 
 a {
@@ -27,6 +27,41 @@ h1, h2, h3, h4, h5, h6 {
 
 .red-letters {
   color: #cf152d !important;
+}
+
+.ghost-button {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #cf152d;
+  background: #fff;
+  border: 2px solid #cf152d;
+}
+
+.ghost-button:hover {
+  color: #fff;
+  background: #cf152d;
+  box-shadow: 0px 5px 30px rgba(207, 10, 44, 0.4);
+}
+
+.ghost-button span {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+
+.ghost-button i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.ghost-button:hover i {
+  transform: translateX(5px);
 }
 
 /*--------------------------------------------------------------
@@ -548,7 +583,7 @@ section {
 
 .nums-container span {
   color: #24282b;
-  padding-left: 2rem;
+  padding-left: 6rem;
 }
 
 #nums, .nums-text {
@@ -556,7 +591,7 @@ section {
 }
 
 #nums {
-  font-size: 10em;
+  font-size: 15em;
   line-height: 1;
   font-weight: 900;
 }
@@ -579,7 +614,8 @@ section {
 .about h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #012970;
+  color: #24282b;
+  padding: 20px 0;
 }
 
 .about p {
@@ -709,6 +745,11 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+
+.tab-pane p {
+  font-size: 18px;
+}
+
 .features .feature-box {
   padding: 24px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
@@ -738,15 +779,31 @@ section {
   color: #fff;
 }
 
-.features .feture-tabs {
-  margin-top: 120px;
+
+.features .feture-tabs .tabs-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .features .feture-tabs h3 {
-  color: #012970;
+  color: #24282b;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 10px;
+}
+
+.feture-tabs {
+  position: relative;
+}
+
+.feture-tabs .bg-animation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -99;
 }
 
 @media (max-width: 768px) {
@@ -764,7 +821,7 @@ section {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 600;
-  color: #012970;
+  color: #24282b;
   padding: 12px 0;
   margin-right: 25px;
   margin-bottom: -2px;
@@ -772,8 +829,8 @@ section {
 }
 
 .features .feture-tabs .nav-link.active {
-  color: #4154f1;
-  border-bottom: 3px solid #4154f1;
+  color: #cf152d;
+  border-bottom: 3px solid #cf152d;
 }
 
 .features .feture-tabs .tab-content h4 {
@@ -784,10 +841,9 @@ section {
 }
 
 .features .feture-tabs .tab-content i {
-  font-size: 24px;
+  font-size: 19px;
   line-height: 0;
   margin-right: 8px;
-  color: #4154f1;
 }
 
 .features .feature-icons {
