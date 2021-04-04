@@ -183,23 +183,23 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
+    let projectContainer = select('.project-container');
+    if (projectContainer) {
+      let projectIsotope = new Isotope(projectContainer, {
+        itemSelector: '.project-item',
         layoutMode: 'fitRows'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let projectFilters = select('#project-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#project-flters li', function(e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        projectFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
+        projectIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
         aos_init();
@@ -209,16 +209,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox
+   * Initiate project lightbox
    */
-  const portfolioLightbox = GLightbox({
+  const projectLightbox = GLightbox({
     selector: '.portfokio-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * project details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.project-details-slider', {
     speed: 400,
     autoplay: {
       delay: 5000,
@@ -226,8 +226,7 @@
     },
     pagination: {
       el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+      dynamicBullets: true,
     }
   });
 
