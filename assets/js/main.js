@@ -1,9 +1,4 @@
-/**
-* Template Name: FlexStart - v1.1.1
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -31,7 +26,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -158,20 +153,13 @@
   /**
    * Clients Slider
    */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
+   new Swiper('.clients-slider', {
+     loop: true,
+     navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
       320: {
         slidesPerView: 2,
         spaceBetween: 40
@@ -189,7 +177,7 @@
         spaceBetween: 120
       }
     }
-  });
+   });
 
   /**
    * Porfolio isotope and filter
@@ -221,7 +209,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfokio-lightbox'

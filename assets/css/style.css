@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
   padding: 10px 20px;
   border-radius: 50px;
-  transition: 0.5s;
+  transition: 0.3s !important;
   color: #cf152d;
   background: #fff;
   border: 2px solid #cf152d;
@@ -108,7 +108,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: #24282b;
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -131,7 +131,7 @@ section {
   list-style: none;
   padding: 0 0 10px 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .breadcrumbs ol a {
@@ -150,7 +150,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #8894f6;
+  color: #cf152d;
   content: "/";
 }
 
@@ -238,6 +238,7 @@ section {
 */
 .navbar {
   padding: 0;
+  position: static;
 }
 
 .navbar ul {
@@ -245,11 +246,10 @@ section {
   padding: 0;
   display: flex;
   list-style: none;
-  align-items: center;
 }
 
 .navbar li {
-  position: relative;
+  position: static;
 }
 
 .navbar a {
@@ -261,7 +261,6 @@ section {
   font-size: 17px;
   font-weight: 700;
   color: #24282b;
-  white-space: nowrap;
   transition: 0.3s;
 }
 
@@ -289,12 +288,13 @@ section {
 }
 
 .navbar .dropdown ul {
-  display: block;
   position: absolute;
-  left: 14px;
+  left: 0;
+  right: 0;
+  width: 100%;
   top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
+  margin: 0 auto;
+  padding: 30px 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -313,10 +313,13 @@ section {
   font-size: 15px;
   text-transform: none;
   font-weight: 600;
+  float: left;
 }
 
 .navbar .dropdown ul a i {
-  font-size: 12px;
+  font-size: 18px;
+  padding-right: 8px;
+  color:  #cf152d;
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
@@ -452,6 +455,10 @@ section {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
+/**
+* Megamenu
+*/
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -744,24 +751,24 @@ section {
   font-size: 18px;
 }
 
-.features .feature-box {
+.services-section .feature-box {
   padding: 24px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
   height: 100%;
 }
 
-.features .feature-box h3 {
+.services-section .feature-box h3 {
   font-size: 18px;
   color: #24282b;
   font-weight: 700;
   margin: 0;
 }
 
-.features .feature-box i {
+.services-section .feature-box i {
   line-height: 0;
-  background: #fae7ea;
-  color: #24282b;
+  background: #a3a5a8;
+  color: #fff;
   padding: 4px;
   margin-right: 10px;
   font-size: 24px;
@@ -769,19 +776,24 @@ section {
   transition: 0.3s;
 }
 
-.features .feature-box:hover i {
+.services-section .feature-box:hover i {
   background: #cf152d;
   color: #fff;
 }
 
+.services-section .section-link {
+  text-align: center;
+  margin-top: 50px;
+}
 
-.features .feture-tabs .tabs-container {
+
+.whyus-section .feture-tabs .tabs-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.features .feture-tabs h3 {
+.whyus-section .feture-tabs h3 {
   color: #24282b;
   font-weight: 700;
   font-size: 32px;
@@ -802,16 +814,16 @@ section {
 }
 
 @media (max-width: 768px) {
-  .features .feture-tabs h3 {
+  .whyus-section .feture-tabs h3 {
     font-size: 28px;
   }
 }
 
-.features .feture-tabs .nav-pills {
+.whyus-section .feture-tabs .nav-pills {
   border-bottom: 1px solid #eee;
 }
 
-.features .feture-tabs .nav-link {
+.whyus-section .feture-tabs .nav-link {
   background: none;
   text-transform: uppercase;
   font-size: 15px;
@@ -823,29 +835,29 @@ section {
   border-radius: 0;
 }
 
-.features .feture-tabs .nav-link.active {
+.whyus-section .feture-tabs .nav-link.active {
   color: #cf152d;
   border-bottom: 3px solid #cf152d;
 }
 
-.features .feture-tabs .tab-content h4 {
+.whyus-section .feture-tabs .tab-content h4 {
   font-size: 18px;
   margin: 0;
   font-weight: 700;
   color: #012970;
 }
 
-.features .feture-tabs .tab-content i {
+.whyus-section .feture-tabs .tab-content i {
   font-size: 19px;
   line-height: 0;
   margin-right: 8px;
 }
 
-.features .feature-icons {
+.whyus-section .feature-icons {
   margin-top: 120px;
 }
 
-.features .feature-icons h3 {
+.whyus-section .feature-icons h3 {
   color: #012970;
   font-weight: 700;
   font-size: 32px;
@@ -854,33 +866,34 @@ section {
 }
 
 @media (max-width: 768px) {
-  .features .feature-icons h3 {
+  .whyus-section .feature-icons h3 {
     font-size: 28px;
   }
 }
 
-.features .feature-icons .content .icon-box {
+.whyus-section .feature-icons .content .icon-box {
   display: flex;
 }
 
-.features .feature-icons .content .icon-box h4 {
+.whyus-section .feature-icons .content .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
   color: #012970;
 }
 
-.features .feature-icons .content .icon-box i {
+.whyus-section .feature-icons .content .icon-box i {
   font-size: 44px;
   line-height: 44px;
   color: #0245bc;
   margin-right: 15px;
 }
 
-.features .feature-icons .content .icon-box p {
+.whyus-section .feature-icons .content .icon-box p {
   font-size: 15px;
   color: #848484;
 }
+
 
 /*--------------------------------------------------------------
 # Services
@@ -1338,6 +1351,11 @@ section {
   right: 15px;
 }
 
+.portfolio .section-link {
+  text-align: center;
+  margin-top: 50px;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1382,7 +1400,7 @@ section {
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .portfolio-details .portfolio-info ul li + li {
@@ -1592,7 +1610,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients .clients-slider .swiper-slide img {
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.3s;
   max-height: 100px;
 }
@@ -1616,6 +1634,28 @@ section {
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #cf152d;
+}
+
+.clients .swiper-button-next {
+  right: -7%;
+  bottom: 5%;
+  top: auto;
+  color: #919395;
+}
+
+.clients .swiper-button-next:focus {
+  outline: none;
+}
+
+.clients .swiper-button-prev {
+  left: -7%;
+  bottom: 5%;
+  top: auto;
+  color: #919395;
+}
+
+.clients .swiper-button-prev:focus {
+  outline: none;
 }
 
 /*--------------------------------------------------------------
