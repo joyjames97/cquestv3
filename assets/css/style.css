@@ -1255,7 +1255,7 @@ section {
   align-items: center;
 }
 
-.project .project-wrap .project-info::before {
+.project .project-wrap  .project-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -1263,8 +1263,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid rgba(1, 41, 112, 0.2);
-  border-left: 3px solid rgba(1, 41, 112, 0.2);
+  border-top: 3px solid #a3a5a8;
+  border-left: 3px solid #a3a5a8;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -1277,20 +1277,20 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid rgba(1, 41, 112, 0.2);
-  border-right: 3px solid rgba(1, 41, 112, 0.2);
+  border-bottom: 3px solid #a3a5a8;
+  border-right: 3px solid #a3a5a8;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .project .project-wrap .project-info h4 {
   font-size: 20px;
-  color: #012970;
+  color: #24282b;
   font-weight: 700;
 }
 
 .project .project-wrap .project-info p {
-  color: #012970;
+  color: #24282b;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
@@ -1304,25 +1304,13 @@ section {
 }
 
 .project .project-wrap .project-links a {
-  color: #fff;
-  background: #4154f1;
-  margin: 10px 2px;
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   transition: 0.3s;
 }
 
 .project .project-wrap .project-links a i {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 0;
-}
-
-.project .project-wrap .project-links a:hover {
-  background: #5969f3;
+  padding-left: 5px;
 }
 
 .project .project-wrap:hover img {
