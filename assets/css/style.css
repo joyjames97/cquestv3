@@ -2353,7 +2353,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
+  background: #24282b;
   padding: 0 0 30px 0;
   font-size: 16px;
 }
@@ -2409,10 +2409,10 @@ section {
 }
 
 .footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
+  background: #24282b url(../img/footer-bg.png) no-repeat right top;
   background-size: contain;
-  border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
+  border-top: 1px solid #393d40;
+  border-bottom: 1px solid #393d40;
   padding: 60px 0 30px 0;
 }
 
@@ -2432,7 +2432,7 @@ section {
 }
 
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -2450,25 +2450,30 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Lato", sans-serif;
+  color: #fff;
+  padding-right: 20px;
 }
 
 .footer .footer-top .social-links a {
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  color: #24282b;
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
+  background: #fff;
+  padding: 8px;
+  border-radius: 50%;
 }
 
 .footer .footer-top .social-links a:hover {
-  color: #012970;
+  color: #cf152d;
 }
 
 .footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #012970;
+  color: #fff;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -2486,7 +2491,7 @@ section {
 
 .footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #d0d4fc;
+  color: #cf152d;
   font-size: 12px;
   line-height: 0;
 }
@@ -2502,14 +2507,14 @@ section {
 }
 
 .footer .footer-top .footer-links ul a {
-  color: #013289;
+  color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-top .footer-links ul a:hover {
-  color: #4154f1;
+  color: #cf152d;
 }
 
 .footer .footer-top .footer-contact p {
@@ -2519,7 +2524,7 @@ section {
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #012970;
+  color: #fff;
 }
 
 .footer .credits {
